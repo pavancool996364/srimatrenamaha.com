@@ -1,0 +1,203 @@
+<html>
+   <head>
+      <style>
+               body {
+               font-family: arial, sans-serif;
+               border-collapse: collapse;
+               font-size: 12px;
+               }
+               .status-open {
+               background-color: #ff0000;
+               color: white;
+               }
+               .status-closed {
+               background-color: #008000;
+               color: white;
+               }
+               .status-In-Progress {
+               background-color: #f47609;
+               color: white;
+               }
+               table tr td,
+               table tr th {
+               padding: 5px;
+               text-align: center;
+               }
+               .header {
+               width: 100%;
+               display: flex;
+               padding-bottom: 7px;
+               }
+               .logo {
+               width: 200px;
+               padding-right: 10px;
+               }
+               .logo img {
+               width: 100%;
+               }
+               .logo-text {
+               font-size: 25px;
+               padding-top: 15px;
+               font-weight: 600;
+               text-align: center;
+               }
+               .Department {
+               color: #0070c0;
+               text-align: left;
+               font-weight: bold;
+               }
+               @page {
+               size: A4;
+               margin: 1cm;
+               }
+               .flex-container {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               margin-bottom: 10px;
+               }
+               .flex-item {
+               flex: 1;
+               font-weight: 600;
+               font-size: 25px;
+               }
+               .flex-item1 {
+               flex: 1;
+               font-weight: 600;
+               font-size: 14px;
+               padding-top: 15px;
+               }
+               /* Right-align numeric values */
+               .total-numeric {
+                   text-align: right;
+               }
+               .text{
+                   text-align: left;
+               }
+            </style>
+   </head>
+   <body>
+      <div class="flex-container">
+         <div class="flex-item">
+            <img width="200"
+                 src="https://quixy.com/wp-content/uploads/2020/04/logo2x.png"/>
+         </div>
+         <div class="flex-item logo-text">Scrum Report</div>
+         <div class="flex-item1">
+                  Project Name: 
+                  Project X<br/>
+            <br/>
+                  System Generated Date: 
+                  2024-04-03</div>
+      </div>
+      <div class="content">
+         <table width="100%" border="1" cellspacing="0">
+            <tr style="background-color:#bd9b60; color:#fff; height:50px;">
+               <th rowspan="2">Project Name and Sprint Name</th>
+               <th rowspan="2">Module/Sub Module</th>
+               <th rowspan="2">Task ID/Summary</th>
+               <th colspan="2">Estimation Hrs</th>
+               <th colspan="3">Logged Hours</th>
+               <th rowspan="2">Yet To Burn</th>
+               <th rowspan="2">Completed %</th>
+               <th rowspan="2">Pending %</th>
+               <th rowspan="2">Status</th>
+            </tr>
+            <tr style="background-color:#bd9b60; color:#fff; height:50px;">
+               <th>Planned </th>
+               <th>Baseline Hours</th>
+               <th>Yesterday</th>
+               <th>Today</th>
+               <th>Cumulative</th>
+            </tr>
+            <tr>
+               <td class="Department" colspan="13">John Doe<span style="float:right;">
+                     
+                     Available Hours: 8, Leaves Applied: 0,
+Total Tasks: 1,
+Status:   
+      
+      New (0), 
+      In Progress(1), 
+      Resolved(0), Closed (0)
+      </span>
+               </td>
+            </tr>
+            <tr>
+               <td class="text" style="width: 100px;">Project X</td>
+               <td class="text" style="width: 100px;">Module A</td>
+               <td class="text" style="width: 300px;">123</td>
+               <td class="total-numeric" style="width: 20px;">40</td>
+               <td class="total-numeric" style="width: 20px;">0</td>
+               <td class="total-numeric" style="width: 15px;">0</td>
+               <td class="total-numeric" style="width: 20px;">8</td>
+               <td class="total-numeric" style="width: 20px;">20</td>
+               <td class="total-numeric" style="width: 15px;">20</td>
+               <td class="total-numeric" style="width: 20px;">50</td>
+               <td class="total-numeric" style="width: 20px;">50</td>
+               <td style="width: 20px;" class="status-In-Progress">In Progress</td>
+            </tr>
+            <tr style="color:#2d2d2d; font-weight:bold; ">
+               <td colspan="3">
+                  Total Tasks Estimated Hrs. and Work Logged Hrs. for 
+                  John Doe
+                  :
+               </td>
+               <td class="total-numeric">40</td>
+               <td class="total-numeric">0</td>
+               <td class="total-numeric">0</td>
+               <td class="total-numeric">8</td>
+               <td class="total-numeric">20</td>
+               <td class="total-numeric">20</td>
+               <td class="total-numeric"/>
+               <td class="total-numeric"/>
+               <td class="total-numeric"/>
+            </tr>
+            <tr>
+               <td class="Department" colspan="13">Jane Smith<span style="float:right;">
+                     
+                     Available Hours: 8, Leaves Applied: 0,
+Total Tasks: 1,
+Status:   
+      
+      New (0), 
+      In Progress(1), 
+      Resolved(0), Closed (0)
+      </span>
+               </td>
+            </tr>
+            <tr>
+               <td class="text" style="width: 100px;">Project Y</td>
+               <td class="text" style="width: 100px;">Module B</td>
+               <td class="text" style="width: 300px;">456</td>
+               <td class="total-numeric" style="width: 20px;">30</td>
+               <td class="total-numeric" style="width: 20px;">0</td>
+               <td class="total-numeric" style="width: 15px;">1</td>
+               <td class="total-numeric" style="width: 20px;">7</td>
+               <td class="total-numeric" style="width: 20px;">15</td>
+               <td class="total-numeric" style="width: 15px;">15</td>
+               <td class="total-numeric" style="width: 20px;">50</td>
+               <td class="total-numeric" style="width: 20px;">50</td>
+               <td style="width: 20px;" class="status-In-Progress">In Progress</td>
+            </tr>
+            <tr style="color:#2d2d2d; font-weight:bold; ">
+               <td colspan="3">
+                  Total Tasks Estimated Hrs. and Work Logged Hrs. for 
+                  Jane Smith
+                  :
+               </td>
+               <td class="total-numeric">30</td>
+               <td class="total-numeric">0</td>
+               <td class="total-numeric">1</td>
+               <td class="total-numeric">7</td>
+               <td class="total-numeric">15</td>
+               <td class="total-numeric">15</td>
+               <td class="total-numeric"/>
+               <td class="total-numeric"/>
+               <td class="total-numeric"/>
+            </tr>
+         </table>
+      </div>
+      <div class="footer"/>
+   </body>
+</html>
